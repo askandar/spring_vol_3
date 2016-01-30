@@ -39,24 +39,4 @@ public class InjectSimple {
                 + "Programmer: " + programmer + "\n"
                 + "Age In Seconds: " + ageInSeconds + "\n";
     }
-/*
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public void setHeight(float height) {
-        this.height = height;
-    }
-
-    public void setProgrammer(boolean programmer) {
-        this.programmer = programmer;
-    }
-
-    public void setAgeInSeconds(Long ageInSeconds) {
-        this.ageInSeconds = ageInSeconds;
-    }*/
 }
