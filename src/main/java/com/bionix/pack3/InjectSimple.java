@@ -1,4 +1,4 @@
-package com.bionix.pack2.annotation;
+package com.bionix.pack3;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.support.GenericXmlApplicationContext;
