@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="helper" class="com.bionix.pack6.MyHelper" scope="prototype"/>
+
+    <bean id="abstractLookupBean" class="com.bionix.pack6.AbstractLookupDemoBean">
+        <lookup-method name="getMyHelper" bean="helper"></lookup-method>
+    </bean>
+
+    <bean id="standardLookupBean" class="com.bionix.pack6.StandardLookupDemoBean">
+        <property name="myHelper">
+            <ref bean="helper"/>
+        </property>
+    </bean>
+
+</beans>
